@@ -8,7 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     use HasFactory;
-    protected $fillable = ['title', 'slug', 'content', 'likes', 'views'];
+
+    protected $fillable = [
+        'title',
+        'slug',
+        'content',
+        'likes',
+        'views'
+    ];
 
     public function comments()
     {
